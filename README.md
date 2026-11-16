@@ -4,6 +4,8 @@
 
 **Status: incomplete Chrome extension scaffold. Role checking is not implemented.**
 
+The idea has a name and an icon; the useful part still needs building. Today this repo helps set expectations, not check anyone's roles.
+
 The recovered local folder contains a Manifest V3 extension shell, but this public repository publishes only this README and the existing icon. The local source has not been mirrored here, so this repository is not an installable extension.
 
 ## What the local scaffold currently contains
