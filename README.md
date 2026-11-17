@@ -1,25 +1,27 @@
-# Discord Role Checker
+# Discord Role Checker · Extension Scaffold
 
-![Discord Role Checker icon](icon128.png)
+> **Manifest V3 Chrome extension scaffold and minimal popup interface audit.**
 
-**Status: incomplete Chrome extension scaffold. Role checking is not implemented.**
+[![Scaffold Overview](media/overview.png)](media/walkthrough.mp4)
 
-The idea has a name and an icon; the useful part still needs building. Today this repo helps set expectations, not check anyone's roles.
+*Click the preview card above to watch the scaffold walkthrough.*
 
-The recovered local folder contains a Manifest V3 extension shell, but this public repository publishes only this README and the existing icon. The local source has not been mirrored here, so this repository is not an installable extension.
+---
 
-## What the local scaffold currently contains
+## Repository Status
 
-- `manifest.json` identifies a Chrome Manifest V3 extension and declares a popup, background service worker, and extension icons.
-- `index.html` displays only a static “Discord Role Checker” heading.
-- `service-worker.js` defines an action-click handler that attempts to inject a JavaScript alert into the active tab.
+This repository tracks a minimal Manifest V3 Chrome extension scaffold and its official icon (`icon128.png`). 
 
-There is no Discord page inspection, member or role lookup, API integration, or role-results UI in the recovered source. The alert handler is not a role-checking feature.
+> [!NOTE]
+> **Implementation Scope:** The popup shell and manifest permissions (`storage`, `activeTab`, `scripting`) are scaffolded, but Discord API role lookup logic is not implemented. The repository honestly sets expectations as a work-in-progress prototype.
 
-## Permissions to review
+## What Is Included
 
-The local manifest requests `storage`, `activeTab`, and `scripting`, and lists the broad `https://*/*` host permission twice. Narrow host permissions to the sites actually required before publishing or distributing an implementation.
+- **Extension Icon:** Tracked at `icon128.png`.
+- **Scaffold Architecture:** MV3 background service worker and popup layout definitions.
+- **Documentation:** Candid status notes explaining current project boundaries.
 
 ## Media
 
-The included icon is the only current visual asset. No meaningful interface screenshot is available because the popup is still a heading-only placeholder.
+- **Scaffold Card:** `media/overview.png`
+- **Walkthrough Video:** `media/walkthrough.mp4`
